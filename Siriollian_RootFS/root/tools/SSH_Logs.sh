@@ -1,0 +1,1 @@
+journalctl -q SYSLOG_FACILITY=10 SYSLOG_FACILITY=4 -f

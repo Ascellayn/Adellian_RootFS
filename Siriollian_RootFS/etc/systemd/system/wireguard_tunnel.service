@@ -1,0 +1,10 @@
+[Unit]
+Description=Sirity | Wireguard VPN
+After=sshd.service
+
+[Service]
+Type=simple
+ExecStart=/bin/sh /System/Sirity/Wireguard/Master.sh
+
+[Install]
+WantedBy=default.target

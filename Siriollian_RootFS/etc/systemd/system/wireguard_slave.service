@@ -1,0 +1,10 @@
+[Unit]
+Description=Sirity | Wireguard SSH VPN Access - Slave
+After=sshd.service
+
+[Service]
+Type=simple
+ExecStart=/bin/sh /System/Sirity/Wireguard/Slave.sh
+
+[Install]
+WantedBy=default.target
