@@ -1,0 +1,7 @@
+PRETTY_NAME="Adellian GNU/Linux debian/experimental"
+NAME="Adellian GNU/Linux"
+VERSION_CODENAME=adellian
+ID=adellian
+HOME_URL="https://sirio-network.com/adellian"
+SUPPORT_URL="https://sirio-network.com/adellian#support"
+BUG_REPORT_URL="https://sirio-network.com/adellian#bug"
