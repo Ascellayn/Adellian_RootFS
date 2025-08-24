@@ -1,0 +1,340 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "file",
+    "source": "/System/Adellian_Logo.txt",
+    "color": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": ""
+    },
+    "width": null,
+    "height": null,
+    "padding": {
+      "top": 0,
+      "left": 0,
+      "right": 2
+    },
+    "printRemaining": true,
+    "preserveAspectRatio": true,
+    "recache": false,
+    "position": "left",
+    "chafa": {
+      "fgOnly": false,
+      "symbols": "block+border+space-wide-inverted"
+    }
+  },
+  "display": {
+    "stat": false,
+    "pipe": false,
+    "showErrors": false,
+    "disableLinewrap": false,
+    "hideCursor": false,
+    "separator": " ▎",
+    "color": {
+      "keys": "38;2;165;153;235",
+      "title": "",
+      "output": "38;2;153;190;237",
+      "separator": "38;2;158;172;234"
+    },
+    "brightColor": true,
+    "duration": {
+      "abbreviation": false,
+      "spaceBeforeUnit": "default"
+    },
+    "size": {
+      "maxPrefix": "YB",
+      "binaryPrefix": "iec",
+      "ndigits": 2,
+      "spaceBeforeUnit": "default"
+    },
+    "temp": {
+      "unit": "D",
+      "ndigits": 1,
+      "color": {
+        "green": "32",
+        "yellow": "93",
+        "red": "91"
+      },
+      "spaceBeforeUnit": "default"
+    },
+    "percent": {
+      "type": [
+        "num",
+        "num-color"
+      ],
+      "ndigits": 0,
+      "color": {
+        "green": "32",
+        "yellow": "93",
+        "red": "91"
+      },
+      "spaceBeforeUnit": "default",
+      "width": 0
+    },
+    "bar": {
+      "char": {
+        "elapsed": "■",
+        "total": "-"
+      },
+      "border": {
+        "left": "[ ",
+        "right": " ]",
+        "leftElapsed": "",
+        "rightElapsed": ""
+      },
+      "color": {
+        "elapsed": "auto",
+        "total": "97",
+        "border": "97"
+      },
+      "width": 10
+    },
+    "fraction": {
+      "ndigits": null
+    },
+    "noBuffer": false,
+    "key": {
+      "width": 0,
+      "type": "string",
+      "paddingLeft": 0
+    },
+    "freq": {
+      "ndigits": 2,
+      "spaceBeforeUnit": "default"
+    },
+    "constants": []
+  },
+  "general": {
+    "thread": true,
+    "processingTimeout": 5000,
+    "detectVersion": true,
+    "playerName": "",
+    "dsForceDrm": false
+  },
+  "modules": [
+    {
+      "type": "title",
+      "key": " ",
+      "keyIcon": "",
+      "fqdn": false,
+      "color": {
+        "user": "38;2;122;103;226",
+        "at": "38;2;111;122;225",
+        "host": "38;2;105;159;231"
+      }
+    },
+
+    {
+      "type": "separator",
+      "string": "▔",
+      "outputColor": "38;2;89;60;188",
+      "length": 0
+    },
+
+    {
+      "type": "os",
+      "key": "OS\t\t",
+      "keyIcon": ""
+    },
+    {
+      "type": "host",
+      "key": "Host\t\t",
+      "keyIcon": "󰌢"
+    },
+    {
+      "type": "kernel",
+      "key": "Kernel\t",
+      "keyIcon": ""
+    },
+    {
+      "type": "uptime",
+      "key": "Uptime\t",
+      "keyIcon": ""
+    },
+
+    {
+      "type": "break"
+    },
+    {
+      "type": "separator",
+      "string": "Adellian Theme",
+      "outputColor": "38;2;89;60;188",
+      "length": 1
+    },
+
+    {
+      "type": "de",
+      "keyIcon": "",
+      "slowVersionDetection": false
+    },
+    {
+      "type": "wm",
+      "key": "WM\t\t",
+      "keyIcon": "",
+      "detectPlugin": false
+    },
+    {
+      "type": "theme",
+      "key": "Theme\t\t",
+      "keyIcon": "󰓸"
+    },
+    {
+      "type": "icons",
+      "key": "Icons\t\t",
+      "keyIcon": ""
+    },
+    {
+      "type": "cursor",
+      "key": "Cursor\t",
+      "keyIcon": "󰆿"
+    },
+
+    {
+      "type": "break"
+    },
+    {
+      "type": "separator",
+      "string": "System Specifications",
+      "outputColor": "38;2;89;60;188",
+      "length": 1
+    },
+
+    {
+      "type": "cpu",
+      "key": "CPU\t\t",
+      "keyIcon": "",
+      "temp": false,
+      "showPeCoreCount": false
+    },
+    {
+      "type": "gpu",
+      "key": "GPU\t\t",
+      "keyIcon": "󰾲",
+      "driverSpecific": false,
+      "detectionMethod": "pci",
+      "temp": false,
+      "hideType": "none",
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0
+      }
+    },
+    {
+      "type": "memory",
+      "key": "RAM\t\t",
+      "keyIcon": "",
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0
+      }
+    },
+    {
+      "type": "disk",
+      "key": "Disk\t\t",
+      "keyIcon": "",
+      "showRegular": true,
+      "showExternal": true,
+      "showHidden": false,
+      "showSubvolumes": false,
+      "showReadOnly": true,
+      "showUnknown": false,
+      "folders": "",
+      "hideFolders": "/efi:/boot:/boot/efi:/boot/firmware",
+      "hideFS": "",
+      "useAvailable": false,
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0
+      },
+      "format": "{name} ({mountpoint}) {size-used}/{size-total} [{size-percentage}]"
+    },
+    {
+      "type": "battery",
+      "key": "Battery\t",
+      "keyIcon": "",
+      "temp": true,
+      "percent": {
+        "green": 50,
+        "yellow": 20,
+        "type": 0
+      }
+    },
+    {
+      "type": "poweradapter",
+      "keyIcon": "󰚥"
+    },
+    {
+      "type": "board",
+      "key": "Motherboard\t",
+      "keyIcon": ""
+    },
+    {
+      "type": "bios",
+      "key": "BIOS Version\t",
+      "keyIcon": ""
+    },
+
+    {
+      "type": "break"
+    },
+
+    {
+      "type": "separator",
+      "string": "Peripherals",
+      "outputColor": "38;2;89;60;188",
+      "length": 1
+    },
+    {
+      "type": "display",
+      "key": "Monitor\t",
+      "keyIcon": "󰍹",
+      "compactType": "none",
+      "preciseRefreshRate": false,
+      "order": "desc",
+      "format": "{name} - {width}x{height}@{refresh-rate}Hz"
+    },
+    {
+      "type": "camera",
+      "key": "Camera\t"
+    },
+
+    {
+      "type": "break"
+    },
+
+    {
+      "type": "keyboard",
+      "key": "Keyboard\t"
+    },
+    {
+      "type": "mouse",
+      "key": "Mouse\t\t"
+    },
+
+    "break",
+    {
+      "type": "colors",
+      "key": " ",
+      "keyIcon": "",
+      "symbol": "block",
+      "paddingLeft": 0,
+      "block": {
+        "width": 5,
+        "range": [
+          0,
+          15
+        ]
+      }
+    }
+  ]
+}
