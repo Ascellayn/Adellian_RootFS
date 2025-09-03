@@ -1,0 +1,4 @@
+# Default keyboard layout for gamescope
+XKB_DEFAULT_MODEL=pc105
+XKB_DEFAULT_LAYOUT=fr
+XKB_DEFAULT_VARIANT=latin9
