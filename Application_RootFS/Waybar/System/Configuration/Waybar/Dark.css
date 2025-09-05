@@ -1,0 +1,76 @@
+/* I'm gonna nut because this is CSS and if you don't know me,
+I FUCKIN' LOVE CSS BITCHEEEEEEEEEEEEEEEEEEEEEEEESSSSSSSSSSSSSSS- flashcord ftw btw */
+
+* {
+	font-family: 'SF Compact:style=Semibold';
+	font-size: 12px;
+}
+
+window#waybar {
+	background-color: rgba(40, 15, 40, 0.8); /* Moon Black - Solid */
+	color: rgba(235, 210, 235, 0.8); /* Moon White */
+
+	opacity: 1;
+}
+
+label {
+	padding: 0 10px;
+	margin: 0 1px 0 1px;
+	border-radius: 25px;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+}
+
+label:hover {
+	background-color: rgba(20, 230, 20, 0.5); /* Abyss Black - Floating */
+}
+
+#clock {
+	margin: 0 6px 0 1px;
+}
+
+
+#battery {
+	animation-iteration-count: 1;
+	animation-timing-function: steps(60);
+}
+#battery.charging {
+	animation-name: Flash-Background_Green;
+	animation-duration: 2s;
+}
+#battery.warning:not(.charging) {
+	animation-name: Flash-Background_Orange;
+	animation-duration: 500ms;
+}
+#battery.critical:not(.charging) {
+	animation-name: Flash-Background_Red;
+	animation-duration: 250ms;
+}
+
+@keyframes Flash-Background_Green {
+	50% { /* Moon Green - Floating */
+		background-color: rgba(28, 175, 50, 0.5);
+	}
+} 
+@keyframes Flash-Background_Orange {
+	50% { /* Moon Yellow - Floating */
+		background-color: rgba(175, 175, 10, 0.5);
+	}
+} 
+@keyframes Flash-Background_Red {
+	50% { /* Moon Red - Floating */
+		background-color: rgba(155, 10, 10, 0.5);
+	}
+} 
+
+
+/* The fucking specifications says that transform is a thing yet well HA it doesn't work
+@keyframes SNDL-Shake {
+    0% {transform: translate(1px 1px); }
+    25% {transform: translate(-1px -1px); }
+    50% {transform: translate(1px 1px); }
+    75% {transform: translate(-1px 1px); }
+    100% {transform: translate(0 0); }
+}
+or i'm stupid */
