@@ -23,7 +23,7 @@ label {
 }
 
 label:hover {
-	background-color: rgba(20, 230, 20, 0.5); /* Abyss Black - Floating */
+	background-color: rgba(20, 0, 20, 0.5); /* Abyss Black - Floating */
 }
 
 #clock {
