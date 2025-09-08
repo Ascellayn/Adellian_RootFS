@@ -1,0 +1,9 @@
+# Adellian Sudo - Configuration File
+Defaults log_host, log_year, logfile="/System/Logs/sudo.log"
+
+Defaults passprompt="Password:"
+Defaults badpass_message="Authentification failed, please try again."
+
+Defaults rootpw
+Defaults passwd_tries=1
+Defaults passwd_timeout=1
