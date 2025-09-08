@@ -2,7 +2,7 @@
 mkdir -p ~/.config/gtk-3.0
 mkdir -p ~/.config/gtk-4.0
 
-Settings=$(cat EOF <<
+Settings=$(cat << EOF
 # Adellian GTK Auto-Configuration
 [Settings]
 gtk-theme-name=$1
